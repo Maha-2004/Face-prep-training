@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Form</title>
+</head>
+<body>
+    <h1>User Information Form</h1>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the form from being submitted
+
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+
+            console.log("Hello, ",name," ! You are ",age," years old.");
+        });
+    </script>
+</body>
+</html>

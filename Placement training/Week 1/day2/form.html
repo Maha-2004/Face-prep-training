@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1 align="center" style="color: black;">
+        <b>REGISTRATION FORM</b>
+    </h1>
+    <div style="border: 3px solid; margin-left: 300px; margin-right: 300px; background-color: aquamarine;">
+    <form>
+        <table align="center">
+            <div><tr>
+               <td ><label for="">Name:</label></td>
+               <td><input type="text" placeholder="entername"></td></tr>
+            </div> <br>
+            <tr>
+                <td><label for="">Phone no:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="">DOB:</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender:</label></td>
+                <td><input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female</td>
+            </tr>
+            <tr>
+                <td><label for="">Email:</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Password:</label></td>
+                <td><input type="Password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Degree:</label></td>
+                    <td><input list="op">
+                    <datalist id="op">
+                        <option>BE</option>
+                        <option>BTECH</option>
+                        <option>ME</option>
+                        <option>MBA</option>
+                    </datalist>
+                </td>
+            </tr>
+                <tr>
+                    <td><label for="">Stream</label></td>
+                    <td><input list="st">
+                    <datalist id="st">
+                        <option>CSE</option>
+                        <option>CST</option>
+                        <option>CSD</option>
+                        <option>Mech</option>
+                        <option>AIDS</option>
+                    </datalist></td>
+                </tr>
+            <tr>
+                <td><label for="">Address:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                    <label for="">I Agree</label>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="6"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+    </table>
+</div>
+</body>
+</html>

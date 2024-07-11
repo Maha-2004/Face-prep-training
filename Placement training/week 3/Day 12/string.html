@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="str">Sum of digits in a string</label>
+    <input type="text" id="str">
+    <p id="ans"></p><br>
+    <button onclick="check()">Check</button>
+    <script>
+        function check(){
+            var str=document.getElementById("str").value;
+            str=str.replace(/[^0-9]/g,"")
+            var sum=0;
+           for(let i=0;i<str.length;i++){
+           sum=sum+parseInt(str.charAt(i));
+           }
+           document.getElementById("ans").innerHTML=sum
+        }
+        
+    </script>
+</body>
+</html>

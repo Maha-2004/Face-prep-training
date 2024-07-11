@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <pre>
+            weight          <input type="text" id="weight">
+            shipping method <input type="text" id="sm">
+            <input type="submit" onclick="alert(calculateshippingcost())">
+
+        </pre>
+    </form>
+    <script>
+        function calculateshippingcost(){
+            weight=document.getElementById("weight").value;
+            shippingmethod=document.getElementById("sm").value;
+            return shippingmethod=="Express"?weight*0.2:weight*0.1
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Results</title>
+</head>
+<body style="text-align: center; background-color: aquamarine;">
+    <h2 style="color: rgb(165, 42, 144);">Enter the number of students placed</h2>
+    <label for="cse" >CSE: </label>
+    <input type="number" id="cse" name="cse"><br><br>
+    <label for="ece">ECE: </label>
+    <input type="number" id="ece" name="ece"><br><br>
+    <label for="mech">MECH: </label>
+    <input type="number" id="mech" name="mech"><br><br>
+    <button onclick="findHighestPlacement()" style="background-color: bisque; color: blue;">Submit</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function findHighestPlacement() {
+            var cse = parseInt(document.getElementById('cse').value);
+            var ece = parseInt(document.getElementById('ece').value);
+            var mech = parseInt(document.getElementById('mech').value);
+
+            var result = (cse < 0 || ece < 0 || mech < 0) ? "Input is Invalid" :
+                         (cse === ece && ece === mech) ? "None of the department has got the highest placement" :
+                         (cse > ece && cse > mech) ? "Highest placement\nCSE" :
+                         (ece > cse && ece > mech) ? "Highest placement\nECE" :
+                         (mech > cse && mech > ece) ? "Highest placement\nMECH" :
+                         "None of the department has got the highest placement"; // For completeness
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

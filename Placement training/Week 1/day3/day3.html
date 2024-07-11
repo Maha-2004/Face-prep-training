@@ -1,0 +1,124 @@
+[1:10 PM, 7/11/2024] Thanu Shree: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            padding: 10px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="border: solid; margin-left: 300px; margin-top: 5px; margin-right: 300px; background-color: white;">
+        <form target="_blanks" action="days3.html">
+            <h2>Students Detail Form</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for = " uname">Name</lable>
+                    </td>
+                    <td>
+                        <input type = "text" placeholder="Name" id = "uname" pattern="[a-zA-Z]+" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for = "umail">Email : </label>
+                    </td>
+                    <td>
+                        <input type = "email"  placeholder="Mail" id = "umail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for = "dept">Department</label></td>
+                <td>
+                    <input type="radio" name = "ra" id = "d1">
+                    <label for="d1">CST</label><br>
+                    <input type="radio" name = "ra"  id = "d1">
+                    <label for="d1">CSE</label><br>
+                    <input type="radio" name = "ra"  id = "d1">
+                    <label for="d1">CSD</label><br>
+                    <input type="radio" name = "ra"  id = "d1">
+                    <label for="d1">IT</label><br>
+                    <input type="radio" name = "ra"  id = "d1">
+                    <label for="d1">MECH</label>
+                </td>
+                </tr>
+                <tr>
+                    <td><label for = "csel">Select your Courses : </label></td>
+                    <td>
+                        <input type="checkbox" id="c1" > 
+                        <label for="c1">C</label><br>
+                        <input type="checkbox" id="c2">
+                        <label for="c2">Python</label><br>
+                        <input type="checkbox" id="c3">
+                        <label for="c3">Java Script</label><br>
+                        <input type="checkbox" id="c4">
+                        <label for="c2">React</label>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for = "inst">Select your institution</label></td>
+                    <td>
+                        <input id = "inst" list="sin">
+                        <datalist id = "sin">
+                            <option>SNSCE</option>
+                            <option>SNSCT</option>
+                            <option>SNS ARTS</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset name="per">
+                            <legend id = "per">PERSONAL INFO</legend> 
+                            <table>
+                                <tr>
+                                    <td>
+                                        <lable for="age">Age : </lable>
+                                    </td>
+                                    <td>
+                                        <input type = "number" id = "age"><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <lable for = "fname">Father's Name: </lable>
+                                    </td>
+                                    <td>
+                                        <input id = "fname" type = "text"><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                   <td>
+                                    <label for="mname">Mother Name : </label>
+                                   </td>
+                                   <td>
+                                    <input id = "mname" type = "text">
+                                   </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p> To know Your Exam Number ,click on this button</p>
+                        <center><button onclick="alert('Your Exam Registration Number is 713321TS028')">Show</button></center>
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2"><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </center>
+</body>
+</html>
+ 
