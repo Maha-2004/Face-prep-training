@@ -1,0 +1,79 @@
+body {
+    background-color: #fffacd;
+}
+
+#heading {
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #ffa07a;
+    text-align: center;
+    padding: 10px;
+}
+
+#Ebill {
+    font-family: Arial, sans-serif;
+    width: 600px;
+    background-color: #5f9ea0;
+    color: white;
+    text-align: left;
+    margin: 20px auto;
+    padding: 20px;
+    padding-top: 12px;
+    border-radius: 8px;
+}
+
+#Ebill table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Ebill th, #Ebill td {
+    padding: 8px;
+    text-align: left;
+    border: 2px solid #ddd;
+}
+
+#Ebill label {
+    display: inline-block;
+    width: 140px;
+}
+
+#result {
+    color: #770080;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Ebill input[type="text"],
+#Ebill input[type="email"],
+#Ebill textarea,
+#Ebill select,
+#Ebill input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#Ebill input[type="checkbox"] {
+    cursor: pointer;
+}
+
+#Ebill input[type="submit"],
+#Ebill input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffa07a;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#Ebill input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
